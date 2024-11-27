@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email List</title>
+    <style>
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        h1 {
+            text-align: center;
+            color: #333333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="email"],
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        
+        .btn {
+            padding: 10px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Please Join Our Email List</h1>
+        <form action="#" method="post">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="e.g., grace@yahoo.com">
+
+            <label for="confirm-email">Re-enter Email Address:</label>
+            <input type="email" id="confirm-email" name="confirm-email" required placeholder="Must match first entry">
+
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required placeholder="Your First Name">
+
+            <button type="submit" class="btn">Join Our List</button>
+        </form>
+    </div>
+</body>
+</html>
